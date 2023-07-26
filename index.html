@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Game of life</title>
+    <link rel="stylesheet" href="./src/style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <canvas></canvas>
+      </div>
+      <div class="footer">
+        <select
+          name="availableRecords"
+          id="availableRecords"
+          onchange="optionChange(this.value)"
+        >
+          <option value="">-Select option-</option>
+        </select>
+        <label id="selectedValue"></label>
+        <button type="button" class="start-button" onclick="startProcess()">
+          Start
+        </button>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./src/js/index.js"></script>
+</html>
